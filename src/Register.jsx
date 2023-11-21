@@ -1,17 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export const Register = (props) => {
-  // const [email, seTEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
-  // const [name, setName] = useState("");
-  // const [phoneNo, setPhoneNo] = useState("");
-
-  // const handleSubmint = (e) => {
-  //   e.preventDefault();
-  //   setformErrors(validate(formValues));
-  //   // setIsSubmit(true);
-  // };
   const[values, setValues] = useState({
     name: "",
     email: "",
@@ -129,64 +118,3 @@ export const Register = (props) => {
     </div>
   );
 };
-
-
-
-// const initialValues = {
-  //   name: "",
-  //   email: "",
-  //   password: "",
-  //   confirmPassword: "",
-  //   phoneNo: ""
-  // };
-
-  // const [formValues, setFormValues] = useState(initialValues);
-  // const [formErrors, setformErrors] = useState({});
-  // const [isSubmit, setIsSubmit] = useState(false);
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormValues({ ...formValues, [name]: value });
-  //  // console.log(formValues);
-  // };
-
-  // useEffect(() => {
-  //   // console.log(formValues);
-  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
-  //     console.log(formValues);
-  //   }
-  // }, [formErrors, formValues, isSubmit]);
-
-  // const handleSubmint = (e) => {
-  //   e.preventDefault();
-  //   setformErrors(validate(formValues));
-  //   setIsSubmit(true);
-  // };
-
-  // const validate = (values) =>{
-  //   let errors = {};
-
-  // if (!values.username.trim()) {
-  //   errors.username = "Username required";
-  // }
-  // if (!values.email.trim()) {
-  //   errors.email = "Email required";
-  // } else if (!/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(values.email)) {
-  //   errors.email = "Email address is invalid";
-  // }
-  // if (!values.password.trim()) {
-  //   errors.password = "Password required";
-  // } else if (values.password.length < 6) {
-  //   errors.password = "Password needs to be 6 characters or more";
-  // }
-  // if (!values.confirmPassword.trim()) {
-  //   errors.confirmPassword = "Confirm password requierd";
-  // } else if (values.confirmPassword !== values.password) {
-  //   errors.confirmPassword = "Password do not match";
-  // }
-  // if (!values.phoneNo.trim()) {
-  //   errors.phoneNo = "Phone number requierd";
-  // }
-
-  // return errors;
-  // }
